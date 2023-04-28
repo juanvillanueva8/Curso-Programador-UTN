@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const distancia = prompt('Ingrese distancia a recorrer:', '');
+        
+        const transportes = ['pie', 'bicicleta', 'colectivo', 'auto', 'avion']
+
+            if(distancia <= 1000){
+            console.log(transportes[0])
+            document.write ('Se recomienda hacer este recorrido a pie')
+            
+            }else
+            
+            if(distancia >1000 && distancia <=10000){
+                console.log(transportes[1])
+                document.write ('Se recomienda hacer este recorrido en bicicleta')
+            }else
+            
+            if(distancia>10000 && distancia <= 30000){
+                console.log(transportes[2])
+                document.write('Se recomienda hacer este recorrido en autobus')
+            }else
+            
+            if(distancia>30000 && distancia<=100000){
+                conole.log (transportes[3])
+                document.write('Se recomienda hacer este recorrido en auto')
+            }else
+            
+            if(distancia>100000){
+                console.log(transportes[4])
+                document.write ('Se recomienda hacer este recorrido en avion')
+            }
+
+    </script>
+</body>
+</html>
