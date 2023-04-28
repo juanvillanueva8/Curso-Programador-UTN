@@ -18,10 +18,10 @@ h1{
     font-size: 20px;
 }
 .conteiner{
-    position: static;
+  position: static;
     display: flex;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-between;
+
 }
 .lista{
     font-style: oblique;
@@ -33,3 +33,4 @@ p{
     font-size: 16px;
     font-style: oblique;
 }
+
