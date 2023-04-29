@@ -8,8 +8,24 @@
 </head>
 <body>
     <script>
-        const numeros[]
+        const NumA = parseInt(prompt('ingrese un numero')) //parseInt para que funcione con 10, 100, 1000, etc. Es importante.
+        const NumB = parseInt(prompt('ingrese otro numero'))
+        const NumC = parseInt(prompt('ingrese otro numero'))
+        const NumD = parseInt(prompt('ingrese otro numero'))
+        const NumE = parseInt(prompt('ingrese otro numero'))
+        const NumF = parseInt(prompt('ingrese otro numero'))
         
+    let array= [NumA,NumB,NumC,NumD,NumE,NumF] //armo un array de numeros con los numeros que le hice introducir al usuario
+    var mayor= array[0] //asumo que la primer posicion es la mayor (hasta ese punto es lo unico que tengo entonces ese es el mayor) y la comparo con todos los elementos que vienen despues
+       
+    for (i=0; i<=5; i++) 
+        {
+        if(array[i]> mayor ){ // comparo una posicion con la primera que por ahora era la mayor
+            mayor = array[i] //si se cumple lo anterior ahora conozco a mi NUEVO mayor y repite hasta que array [i] sea el mayor de todos
+        }
+    }
+    document.write ('El mayor es' + mayor)
+
     </script>
 </body>
 </html>
